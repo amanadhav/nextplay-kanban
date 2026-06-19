@@ -2,7 +2,7 @@
 
 A polished Kanban board for tracking work in flight — built as an internship assessment for Next Play Games.
 
-**Live demo:** _add your Vercel URL here after deploying_
+**Live demo:** [nextplay-kanban-ecru.vercel.app](https://nextplay-kanban-ecru.vercel.app/)
 
 Drag tasks across columns, create tasks with priorities, due dates, and labels, and search/filter in real time. Each visitor gets an isolated, anonymous session backed by Supabase row-level security.
 

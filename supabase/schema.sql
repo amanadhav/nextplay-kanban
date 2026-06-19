@@ -9,12 +9,11 @@ create table if not exists public.tasks (
   user_id uuid not null default auth.uid() references auth.users (id) on delete cascade,
   title text not null,
   description text,
-  status text not null default 'backlog'
-    check (status in ('backlog', 'todo', 'in_progress', 'done')),
+  status text not null default 'todo'
+    check (status in ('todo', 'in_progress', 'in_review', 'done')),
   priority text not null default 'normal'
     check (priority in ('low', 'normal', 'high')),
   due_date date,
-  position double precision not null default 0,
   created_at timestamptz not null default now()
 );
 

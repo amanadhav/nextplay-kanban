@@ -21,6 +21,9 @@
 # editor
 .vscode/
 
+# kiro
+.kiro/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
